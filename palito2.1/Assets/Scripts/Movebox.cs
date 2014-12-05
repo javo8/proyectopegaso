@@ -22,15 +22,15 @@ public class Movebox : MonoBehaviour
 						Destroy (gameObject);
 						}
 
-		if (Player.muerto == 1) {
+		if (Player2.muerto == 1) {
 
 			rigidbody2D.velocity = new Vector2(0,0);
-			if (transform.position.x > 2.6 && transform.position.x < 10) {print ("asd");//Destroy (gameObject);
+			if (transform.position.x > 2.6 && transform.position.x < 10) {//Destroy (gameObject);
 			}}
 	}
 		
-	void OnCollisionEnter2D(Collision2D player)
-	{Player.muerto=1;print ("asd");
+	void OnCollisionEnter2D(Collision2D player2)
+	{Player2.muerto = 1;
 		Destroy (gameObject);	;
 	}
 
