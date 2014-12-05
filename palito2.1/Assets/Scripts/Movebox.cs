@@ -1,0 +1,42 @@
+﻿using UnityEngine;
+
+public class Movebox : MonoBehaviour
+{
+	public Vector2 velocity = new Vector2(-4, 0);
+	public float range = 6;
+	
+	// Use this for initialization
+	void Start()
+	{
+		rigidbody2D.velocity = velocity;
+
+		transform.position = new Vector3(transform.position.x+range * Random.value+7, (Random.value*8-3), transform.position.z);
+
+
+
+
+				}
+	void Update ()
+	{
+				if (transform.position.x < -2.6) {
+						Destroy (gameObject);
+						}
+
+		if (Player.muerto == 1) {
+
+			rigidbody2D.velocity = new Vector2(0,0);
+			if (transform.position.x > 2.6 && transform.position.x < 10) {print ("asd");//Destroy (gameObject);
+			}}
+	}
+		
+	void OnCollisionEnter2D(Collision2D player)
+	{Player.muerto=1;print ("asd");
+		Destroy (gameObject);	;
+	}
+
+
+
+}
+
+
+
