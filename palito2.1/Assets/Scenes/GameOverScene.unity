@@ -142,6 +142,7 @@ GameObject:
   - 92: {fileID: 222366841}
   - 124: {fileID: 222366840}
   - 81: {fileID: 222366839}
+  - 114: {fileID: 222366844}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -214,6 +215,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &222366844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 222366838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cab7b8013af324e98b7e0446f0cbe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boton: {fileID: 0}
+  menu: {fileID: 0}
+  moneda: {fileID: 0}
+  box: {fileID: 0}
 --- !u!1 &1034107712
 GameObject:
   m_ObjectHideFlags: 0
@@ -223,6 +239,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1034107714}
   - 212: {fileID: 1034107713}
+  - 114: {fileID: 1034107715}
   m_Layer: 0
   m_Name: boton-menu
   m_TagString: Untagged
@@ -249,7 +266,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 65c8dd5e6ab9d4c43a283defdeb78f83, type: 3}
   m_Color: {r: .996078432, g: .996078432, b: .996078432, a: 1}
 --- !u!4 &1034107714
@@ -264,6 +281,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &1034107715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1034107712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dfae88eafde5949b05159fac5892b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: menu
 --- !u!1 &1278329267
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +302,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1278329269}
   - 212: {fileID: 1278329268}
+  - 114: {fileID: 1278329270}
   m_Layer: 0
   m_Name: boton 1
   m_TagString: Untagged
@@ -299,7 +329,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: e062666a8317d9f48af613847a8c3898, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1278329269
@@ -314,3 +344,15 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1278329270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1278329267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dfae88eafde5949b05159fac5892b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: pal

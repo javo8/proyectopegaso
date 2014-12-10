@@ -25,8 +25,13 @@ public class Player2 : MonoBehaviour {
 		rigidbody2D.velocity = new Vector2(0,rigidbody2D.velocity.y);
 		if (transform.position.y < -3.5&&muerto==0) {
 			rigidbody2D.velocity = Vector2.zero;
-			transform.position = new Vector3(transform.position.x,(float)-3.5, transform.position.z);
+			transform.position = new Vector3((float)-6.3,(float)-3.5, transform.position.z);
 		}
+		if (transform.position.y > 3.5&&muerto==0) {
+			rigidbody2D.velocity = Vector2.zero;
+			transform.position = new Vector3((float)-6.3,(float)3.5, transform.position.z);
+		}
+
 		if (muerto == 1) {
 						transform.rotation = new Quaternion (0, 0, 45, 0);
 						rigidbody2D.velocity = new Vector2 (0, rigidbody2D.velocity.y);
